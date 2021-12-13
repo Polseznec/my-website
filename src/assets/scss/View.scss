@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.view {
+  position: relative;
+}
+
+.full-screen-container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+// Flex positions
+.flex {
+  display: flex;
+}
+.colunn {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
