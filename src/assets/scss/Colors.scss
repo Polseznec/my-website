@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+//color class
+.green {
+  color: $green;
+}
+.highRed {
+  color: $highRed;
+}
+.lowRed {
+  color: $lowRed;
+}
+.highYellow {
+  color: $highYellow;
+}
+.lowYellow {
+  color: $lowYellow;
+}
+
+//Background color class
+.greenBg {
+  background-color: $green;
+}
+.highRedBg {
+  background-color: $highRed;
+}
+.lowRedBg {
+  background-color: $lowRed;
+}
+.highYellowBg {
+  background-color: $highYellow;
+}
+.lowYellowBg {
+  background-color: $lowYellow;
+}
+
+//svg color class
+
+.filter-lowRed {
+  filter: invert(28%) sepia(25%) saturate(2125%) hue-rotate(321deg)
+    brightness(95%) contrast(96%);
+}
+.filter-lowYellowBg {
+  filter: invert(40%) sepia(74%) saturate(491%) hue-rotate(357deg)
+    brightness(94%) contrast(86%);
+}

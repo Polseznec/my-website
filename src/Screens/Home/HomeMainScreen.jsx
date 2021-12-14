@@ -1,19 +1,26 @@
 import * as React from "react";
 
-//Components Imported
+//Components Import
 import { Center, FullScreenContainer } from "../../Components/Container";
-import { H1, H2, Body } from "../../Components/Text";
-//import Color
+
+import NavBar from "../../Components/NavBar";
+import Header from "../../Components/Home/Header";
+import Displayer from "../../Components/Home/Displayer";
+//Constants Import
 import { colors } from "../../constants/colors";
 
 function HomeMainScreen() {
   console.log(colors.green);
   return (
     <FullScreenContainer>
+      <NavBar />
+
       <Center>
-        <H1 text="Hello" />
-        <H2 text="loren" className="lightRed" />
-        <Body text="FHvfzevgaihmvvikzhgi"></Body>
+        <Header />
+      </Center>
+
+      <Center>
+        <Displayer />
       </Center>
     </FullScreenContainer>
   );
