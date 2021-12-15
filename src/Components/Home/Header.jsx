@@ -12,8 +12,8 @@ import gribouillage from "../../assets/svg/gribouillage-large.svg";
 
 function Header() {
   return (
-    <FullScreenContainer className="header greenBg">
-      <Center>
+    <FullScreenContainer className="greenBg">
+      <Center className="header">
         <Colunn className="right">
           <H1 text="Pol" />
           <H1 text="Seznec" />
