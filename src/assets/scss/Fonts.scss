@@ -1,0 +1,24 @@
+
+
+//Kayak font import
+
+@font-face {
+  font-family: "KayakRegular";
+  src: local("KayakRegular"),
+    url("../Fonts/Kayak/KayakSansRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "KayakLight";
+    src: local("KayakLight"),
+      url("../Fonts/Kayak/KayakSansLight.woff") format("woff");
+  }
+
+
+
+//Pier font import
+@font-face {
+  font-family: "PierRegular";
+  src: local("PierRegular"),
+    url("../Fonts/Pier//PierSansRegular.woff") format("woff");
+}
