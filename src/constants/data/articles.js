@@ -1,23 +1,25 @@
-export const ARTICLES = [
+const ARTICLES = [
   {
-    id: 1,
     title: "Intro",
     sub_title: "Hello buddys",
     description:
       "Pour commencé rien de spécial, juste l'ocasion de dire bonjour.",
-    images: "",
+    image: "",
     path: "/one/intro",
-    category: "text",
-    sub_category: "light",
+    // category: "text",
+    // sub_category: "light",
   },
   {
-    id: 2,
-    title: "",
-    sub_title: "",
-    description: "",
-    images: "",
-    path: "",
-    category: "",
-    sub_category: "",
-  },
+    title: "2",
+    sub_title: "2",
+    description: "2",
+    image: "2",
+    path: "2",
+    category: "2",
+    sub_category: "2",
+  }
 ];
+
+export default ARTICLES;
+
+

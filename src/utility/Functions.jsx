@@ -1,5 +1,13 @@
 // Utility Functions
 
+//Set flexbox direction
+export const setFLexDirection = (right, left, center) => {
+  if (right) return "right";
+  else if (left) return "left";
+  else if (center) return "center";
+  else return null;
+};
+
 // Translate Object in to one String
 export const tClassName = (...args) => {
   let string = "";

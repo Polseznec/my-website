@@ -1,24 +1,26 @@
 import * as React from "react";
 
 //Compoentn import
-import { Flex } from "../Components/Container";
-import { H1 } from "../Components/Text";
+import { ArticleContainer } from "../Components/Container";
+import { H1, Body } from "../Components/Text";
 
-export function Article(
-  {
-    id,
-    title,
-    sub_title,
-    images,
-
-    category,
-    sub_category,
-  },
-  { ...props }
-) {
+export function Article({
+  title,
+  sub_title,
+  image,
+  category,
+  sub_category,
+  children,
+  ...props
+}) {
   return (
-    <Flex>
-      <H1 text="wesh"></H1>
-    </Flex>
+    <ArticleContainer>
+      <H1 text={title} />
+      <Body text={sub_title} />
+      <H1 text={image} />
+      <H1 text={category} />
+      <Body text={sub_category} />
+      {children}
+    </ArticleContainer>
   );
 }
