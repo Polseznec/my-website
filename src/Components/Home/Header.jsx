@@ -2,15 +2,15 @@ import * as React from "react";
 
 //Components Import
 import { Colunn, FullScreenContainer, Row } from "../../Components/Container";
-import { H1, H2, H3 } from "../../Components/Text";
+import { H1 } from "../../Components/Text";
 //Assets Import
 
 function Header() {
   return (
-    <FullScreenContainer>
-      <Colunn className="header">
+    <FullScreenContainer className="header">
+      <Colunn>
         <Row>
-          <H1 text="Pol" />
+          <H1 text="Pute" />
         </Row>
       </Colunn>
     </FullScreenContainer>
