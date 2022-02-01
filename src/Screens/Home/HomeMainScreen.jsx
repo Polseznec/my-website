@@ -5,6 +5,7 @@ import { PageContainer, SectionContainer } from "../../Components/Container";
 
 import Header from "../../Components/Home/Header";
 import Displayer from "../../Components/Home/Displayer";
+
 //Constants Import
 import { colors } from "../../constants/colors";
 

@@ -16,23 +16,27 @@ export function PageContainer({ className, style, ...props }) {
   );
 }
 
-export function SectionContainer({ className, style, ...props }) {
+export function SectionContainer({ className, style, children, ...props }) {
   return (
     <section
       className={TCL("section-container", className)}
       style={style}
       {...props}
-    ></section>
+    >
+      {children}
+    </section>
   );
 }
 
-export function FullScreenContainer({ className, style, ...props }) {
+export function FullScreenContainer({ className, style, children, ...props }) {
   return (
     <div
       className={TCL("full-screen-container", className)}
       style={style}
       {...props}
-    ></div>
+    >
+      {children}
+    </div>
   );
 }
 
