@@ -1,30 +1,28 @@
 import * as React from "react";
-import { gsap } from "gsap";
-
+//Hook Import
+import { useGsapToggle } from "../../Hooks/useGsapToggle";
 //Components Import
 import { Colunn, FullScreenContainer, Row } from "../../Components/Container";
 import { H1 } from "../../Components/Text";
-//Assets Import
 
 function Header() {
-  const [toggel, setToggel] = React.useState(false);
-
-  const changeState = () => {
-    setToggel(!toggel);
-  };
-  const cardRef = React.useRef(null);
-
-  React.useEffect(() => {
-    toggel
-      ? gsap.to(cardRef.current, { scale: 1.5, rotate: 360, duration: 1.2 })
-      : gsap.to(cardRef.current, { scale: 1, rotate: 0, duration: 1.2 });
-  }, [toggel]);
+  const { current: rota360 } = React.useRef({
+    scale: 1.5,
+    rotation: 360,
+    duration: 1,
+  });
+  const [ref, animate] = useGsapToggle(rota360);
 
   return (
     <FullScreenContainer className="header">
-      <Colunn>
-        <Row>
-          <H1 text="Pute" onClick={changeState} ref={cardRef} />
+      <Colunn style={{ backgroundColor: "green", height: "100vh" }}>
+        <Row center>
+          <H1
+            text="Hello Word !"
+            style={{ backgroundColor: "red", marginTop: "20vh" }}
+            ref={ref}
+            onClick={animate}
+          />
         </Row>
       </Colunn>
     </FullScreenContainer>
