@@ -1,24 +1,62 @@
 import * as React from "react";
 
 //Components Import
-import { PageContainer, SectionContainer } from "../../Components/Container";
-
-import Header from "../../Components/Home/Header";
-import Displayer from "../../Components/Home/Displayer";
+import { Background } from "../../Components/Background";
+import { Frame } from "../../Components/Frame";
+import {
+  PageContainer,
+  SectionContainer,
+  SubSectionContainer,
+} from "../../Components/Container";
 
 //Constants Import
 import { colors } from "../../constants/colors";
 
 function HomeMainScreen() {
-  console.log(colors.green);
+  const [click, setClick] = React.useState(false);
+
+  console.log(click);
+  console.log(colors.lightColor, colors.strongColor);
   return (
     <PageContainer>
-      <SectionContainer>
-        <Header />
-      </SectionContainer>
-
-      <SectionContainer>
-        <Displayer />
+      <Frame />
+      <Background />
+      <SectionContainer
+        style={{ padding: "10vh 5vw 10vh 5vw", position: "relative" }}
+      >
+        <SubSectionContainer
+          style={{
+            minHeight: "calc(80vh - 2px)",
+            width: "calc(90vw - 2px)",
+            margin: "1px 1px 0px 1px",
+          }}
+        >
+          hello
+          <br />
+          <button onClick={() => setClick(!click)}>click</button>
+        </SubSectionContainer>
+        <SubSectionContainer
+          style={{
+            minHeight: "calc(80vh - 2px)",
+            width: "calc(90vw - 2px)",
+            margin: "1px 1px 0px 1px",
+          }}
+        >
+          hello
+          <br />
+          <button onClick={() => setClick(!click)}>click</button>
+        </SubSectionContainer>
+        <SubSectionContainer
+          style={{
+            minHeight: "calc(80vh - 2px)",
+            width: "calc(90vw - 2px)",
+            margin: "1px 1px 0px 1px",
+          }}
+        >
+          hello
+          <br />
+          <button onClick={() => setClick(!click)}>click</button>
+        </SubSectionContainer>
       </SectionContainer>
     </PageContainer>
   );

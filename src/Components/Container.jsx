@@ -27,6 +27,18 @@ export function SectionContainer({ className, style, children, ...props }) {
     </section>
   );
 }
+export const SubSectionContainer = ({
+  className,
+  style,
+  children,
+  ...props
+}) => {
+  return (
+    <div className={TCL(className)} style={style} {...props}>
+      {children}
+    </div>
+  );
+};
 
 export function FullScreenContainer({ className, style, children, ...props }) {
   return (

@@ -1,1 +1,40 @@
 @import "./variables.scss";
+
+.top {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  z-index: 100;
+  border-bottom: 1px solid;
+  z-index: 1000;
+}
+.subTop {
+  width: calc(90vw - 2px);
+  margin-left: calc(5vw + 1px);
+  height: 10vh;
+  z-index: 10;
+}
+.left {
+  position: fixed;
+  width: 5vw;
+  height: 100vh;
+  z-index: 10;
+  left: 0;
+  border-right: 1px solid;
+}
+.bottom {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  z-index: 10;
+  bottom: 0;
+  border-top: 1px solid;
+}
+.right {
+  position: fixed;
+  width: 5vw;
+  height: 100vh;
+  z-index: 10;
+  right: 0;
+  border-left: 1px solid;
+}

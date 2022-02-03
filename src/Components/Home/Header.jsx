@@ -1,34 +1,30 @@
 import * as React from "react";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 //Components Import
-import { Colunn, FullScreenContainer, Row } from "../../Components/Container";
-import { H1 } from "../../Components/Text";
+import { FullScreenContainer } from "../../Components/Container";
+
 //Assets Import
 
 function Header() {
-  const [toggel, setToggel] = React.useState(false);
+  // const [toggel, setToggel] = React.useState(true);
 
-  const changeState = () => {
-    setToggel(!toggel);
-  };
-  const cardRef = React.useRef(null);
+  // const changeState = () => {
+  //   setToggel(!toggel);
+  // };
+  // const cardRef = React.useRef(null);
 
-  React.useEffect(() => {
-    toggel
-      ? gsap.to(cardRef.current, { scale: 1.5, rotate: 360, duration: 1.2 })
-      : gsap.to(cardRef.current, { scale: 1, rotate: 0, duration: 1.2 });
-  }, [toggel]);
+  // // React.useEffect(() => {
+  // //   toggel
+  // //     ? gsap.to(cardRef.current, {
+  // //         duration: 1.2,
+  // //         x: 0,
+  // //         scale: 2,
+  // //       })
+  // //     : gsap.to(cardRef.current, { scale: 1, duration: 1.2, x: 0 });
+  // // }, [toggel]);
 
-  return (
-    <FullScreenContainer className="header">
-      <Colunn>
-        <Row>
-          <H1 text="Pute" onClick={changeState} ref={cardRef} />
-        </Row>
-      </Colunn>
-    </FullScreenContainer>
-  );
+  return <FullScreenContainer className="header"></FullScreenContainer>;
 }
 
 export default Header;
