@@ -8,25 +8,30 @@ import {
   SectionContainer,
   SubSectionContainer,
 } from "../../Components/Container";
+import Header from "../../Components/Home/Header";
 
 //Constants Import
-import { colors } from "../../constants/colors";
+//import { colors } from "../../constants/colors";
 
 function HomeMainScreen() {
   const [click, setClick] = React.useState(false);
 
   console.log(click);
-  console.log(colors.lightColor, colors.strongColor);
+  // console.log(colors.lightColor, colors.strongColor);
   return (
     <PageContainer>
       <Frame />
       <Background />
       <SectionContainer
-        style={{ padding: "10vh 5vw 10vh 5vw", position: "relative" }}
+        style={{ padding: "5vh 5vw 10vh 5vw", position: "relative" }}
       >
+        <SubSectionContainer>
+          <Header />
+        </SubSectionContainer>
+
         <SubSectionContainer
           style={{
-            minHeight: "calc(80vh - 2px)",
+            minHeight: "calc(90vh - 2px)",
             width: "calc(90vw - 2px)",
             margin: "1px 1px 0px 1px",
           }}
@@ -37,18 +42,7 @@ function HomeMainScreen() {
         </SubSectionContainer>
         <SubSectionContainer
           style={{
-            minHeight: "calc(80vh - 2px)",
-            width: "calc(90vw - 2px)",
-            margin: "1px 1px 0px 1px",
-          }}
-        >
-          hello
-          <br />
-          <button onClick={() => setClick(!click)}>click</button>
-        </SubSectionContainer>
-        <SubSectionContainer
-          style={{
-            minHeight: "calc(80vh - 2px)",
+            minHeight: "calc(90vh - 2px)",
             width: "calc(90vw - 2px)",
             margin: "1px 1px 0px 1px",
           }}

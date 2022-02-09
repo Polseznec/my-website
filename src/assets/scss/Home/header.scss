@@ -1,47 +1,83 @@
 @import "../variables";
 
-.background {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url("../../img/noise-transparent.png") repeat 0 0;
-  background-repeat: repeat;
-  animation: bganimation 0.5s infinite;
-  opacity: 0.9;
-  background-color: $lightColor;
-}
+.header {
+  color: $strongColor;
+  display: flex;
+  justify-content: space-between;
 
-@keyframes bganimation {
-  0% {
-    transform: translate(0, 0);
-  }
+  .header-left {
+    height: 100%;
+    width: calc(60% + 4px);
+    display: flex;
+    flex-direction: column;
+    .header-left-top {
+      height: 10%;
+      min-height: 60px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 5px;
+      span {
+        width: 60%;
+      }
+    }
+    .header-horizontal-line {
+      width: 60%;
+      height: 2px;
+      background-color: $strongColor;
+    }
+    .header-left-middle {
+      height: 50%;
 
-  30% {
-    transform: translate(5%, -10%);
+      .header-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+        height: 100%;
+        font-size: 4rem;
+      }
+    }
+    .header-left-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 40%;
+      bottom: 0px;
+
+      font-style: bold;
+      img {
+        padding-top: 20px;
+      }
+    }
   }
-  40% {
-    transform: translate(-5%, 15%);
+  .header-line {
+    width: 2px;
+    height: 70%;
+    background-color: $strongColor;
   }
-  50% {
-    transform: translate(-10%, 5%);
-  }
-  60% {
-    transform: translate(15%, 0);
-  }
-  70% {
-    transform: translate(0, 10%);
-  }
-  80% {
-    transform: translate(-15%, 0);
-  }
-  90% {
-    transform: translate(10%, 5%);
-  }
-  100% {
-    transform: translate(5%, 0);
+  .header-right {
+    height: 100%;
+    width: calc(40% - 1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-container-right {
+      height: 90%;
+      width: 90%;
+
+      border: 2px solid $strongColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & div {
+        height: 50%;
+        width: 50%;
+        background-color: $strongColor;
+        filter: blur(120px);
+      }
+    }
   }
 }
