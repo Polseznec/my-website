@@ -1,13 +1,11 @@
-const ARTICLES = [
-  {
+const ARTICLES = [{
     title: "Intro",
     sub_title: "Hello buddys",
-    description:
-      "Pour commencé rien de spécial, juste l'ocasion de dire bonjour.",
+    description: "Pour commencé rien de spécial, juste l'ocasion de dire bonjour.",
     image: "",
     path: "/one/intro",
-    // category: "text",
-    // sub_category: "light",
+    category: "text",
+    sub_category: "light",
   },
   {
     title: "2",
@@ -21,5 +19,3 @@ const ARTICLES = [
 ];
 
 export default ARTICLES;
-
-

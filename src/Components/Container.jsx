@@ -74,6 +74,6 @@ export function Row({ className, right, left, center, ...props }) {
   );
 }
 
-export function ArticleContainer({ className, style, ...props }) {
-  return <div className={TCL("flex", className)} {...props}></div>;
-}
+// export function ArticleContainer({ className, style, ...props }) {
+//   return <div className={TCL("flex", className)} {...props}></div>;
+// }

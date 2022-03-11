@@ -9,6 +9,7 @@ import {
   SubSectionContainer,
 } from "../../Components/Container";
 import Header from "../../Components/Home/Header";
+import ArticlesSection from "../../Components/Home/ArticlesSection";
 
 //Constants Import
 //import { colors } from "../../constants/colors";
@@ -36,10 +37,9 @@ function HomeMainScreen() {
             margin: "1px 1px 0px 1px",
           }}
         >
-          hello
-          <br />
-          <button onClick={() => setClick(!click)}>click</button>
+          <ArticlesSection />
         </SubSectionContainer>
+
         <SubSectionContainer
           style={{
             minHeight: "calc(90vh - 2px)",
