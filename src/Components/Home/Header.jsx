@@ -26,7 +26,7 @@ function Header() {
   // // }, [toggel]);
 
   return (
-    <div
+    <section
       className={"header"}
       style={{
         height: "calc(90vh - 2px)",
@@ -36,7 +36,7 @@ function Header() {
       <div className="header-left">
         <div className="header-left-top">
           <span>
-            WEB DEVELOPER WITH A LOVE INTERESTE IN FRONT-END DEVELOMPENT,
+            WEB DEVELOPER WITH A STRONG INTEREST IN FRONT-END DEVELOMPENT,
             CURRENTLY BASED IN PARIS
           </span>
         </div>
@@ -49,7 +49,7 @@ function Header() {
           </div>
         </div>
         <div className="header-left-bottom">
-          <span className="">TAKE A LOOK OF MY PERSONAL PROJECTS.</span>
+          <span className="">TAKE A LOOK AT MY PERSONAL PROJECTS.</span>
           <img src={Arrow} alt="down Arrow" />
         </div>
       </div>
@@ -59,7 +59,7 @@ function Header() {
           <div></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
